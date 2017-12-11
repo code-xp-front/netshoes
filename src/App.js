@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CardProduct from "./components/CardProduct/CardProduct";
+import RelogioCaro from "./img/relogio-cronografo.jpg";
+import CamisetaCredo from "./img/camiseta-sao-paulo.jpg"
 
-class App extends Component {
-  render() {
-    return (
+var imageClock = {
+  src: RelogioCaro,
+  alt: "Relógio Cronógrafo Technomarine WT30277G"
+};
+
+var imageTshirt = {
+  src: CamisetaCredo,
+  alt: "Camisa São Paulo I 17/18 s/nº Torcedor Under"
+};
+
+export default () => (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <CardProduct name="Relógio Cronógrafo Technomarine WT30277G" price={1745.20} image={imageClock}/>
+        <CardProduct name="Camisa São Paulo I 17/18 s/nº Torcedor Under" price={99.90} image={imageTshirt}/>
       </div>
-    );
-  }
-}
-
-export default App;
+);

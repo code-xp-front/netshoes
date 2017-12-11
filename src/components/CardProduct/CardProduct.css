@@ -1,0 +1,17 @@
+.card-product {
+    font-family: "Trebuchet ms", Arial, sans-serif;
+    font-style: italic;
+    width: 232px;
+}
+
+.card-product__name {
+    color: #333;
+    font-size: 0.8125rem;
+    line-height: 15px;
+}
+
+.card-product__price {
+    color: #13abe1;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
