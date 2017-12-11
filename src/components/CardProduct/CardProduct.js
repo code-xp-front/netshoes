@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardProduct.css";
 
+
 export default (props) => (
     <div className="card-product">
         <img className="card-product__photo" src={props.image.src} alt={props.image.alt}/>
